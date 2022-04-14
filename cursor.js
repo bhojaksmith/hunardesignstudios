@@ -12,7 +12,7 @@ jQuery(document).ready(function() {
     xp += ((mouseX - xp)/10);
     yp += ((mouseY - yp)/10);
     $(".cursor").css({left: xp +'px', top: yp +'px'});
-    }, 20);
+    }, 10);
 
 });
 
