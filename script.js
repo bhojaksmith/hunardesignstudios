@@ -59,12 +59,14 @@ if(mediaQuery.matches){
     
     tagPhoto.style.borderRadius = xAxis+"px";
   });
-    
-}
 
+  
 function makeCursorBlack(){
     $(".cursor").css('border','1px solid black');
 }
 function makeCursorWhite(){
     $(".cursor").css('border','1px solid white');
+}
+
+    
 }

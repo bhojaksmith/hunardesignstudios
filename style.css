@@ -295,12 +295,13 @@
     font-weight: 800;
   }
   .contactCTA{
+    
     font-weight: 600;
     padding: 2% 4% ;
-    border: 2px solid black;
+    border: 0.1vw solid black;
     width: fit-content;
     border-radius: 24px;
-    
+    font-size: .9vw;
     transition: 300ms ease-in;
   }
   .contactCTA:hover{
@@ -313,7 +314,7 @@
   
   .tagPhoto{
     
-    width: 100%;
+    width: 35.9vw;
     height: auto;
   }
   .top{
@@ -330,6 +331,15 @@
   .titleLink{
     cursor: pointer;
   }
+  .titleLink,.tagExplainer{
+    font-size: .9vw;
+  }
+  .tagExplainer{
+    padding: 5% 0%;
+    text-align: justify;
+
+  }
+ 
   
    @media screen and (min-width: 1440px) {
      
@@ -344,6 +354,9 @@
    }
    
    @media screen and (max-width: 479px) {
+     .cursor{
+       display: none;
+     }
      .heroSection {
        overflow: hidden;
        width: 100%;
@@ -399,18 +412,166 @@
        margin-bottom: 5%;
      }
    
-     .mainCTA div{
+     #mainCTA{
        display: flex !important;
        /* padding: 2vw !important; */
-       justify-content: center !important;
+       justify-content: flex-start !important;
+       align-items: center !important;
+       width: 100% !important;
+       color: #fff;
        
-       
-       font-size: 4vw ;
+     }
+     #mainCTA .CTAtext{
+      font-size: 4vw;
      }
      .arrow{
+      color: #fff;
       animation: arrowBounce 1.5s infinite ease-in-out;
       cursor: pointer;
       margin-left: 2vw;
       width: 4vw;
      }
+
+     /* Portfolio Section CSS */
+     
+   
+    .tagTitle{
+      width:80% !important;
+      padding-top: 3%;
+      align-items: center;
+      justify-content: space-between;
+      width: inherit;
+    }
+    .titleHeader{
+      font-size: 6vw;
+    }
+    .ViewHeader{
+      font-size: 6vw;
+      font-weight: 800;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: 0%;
+    }
+    
+    .portfolio{
+      overflow: hidden;
+      padding: 2%;
+      width: 100%;
+    }
+    .tagContainer{
+      overflow :scroll;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: auto;
+      padding-top: 5%;
+      margin-left:  0%;
+      height: fit-content;
+    }
+    .tagContainer::-webkit-scrollbar{
+      display: none;
+    }
+    .tagContainer{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .tag{
+      white-space:pre;
+      font-size:3.5vw;
+      margin-right:2%; 
+      padding:1% 2%;
+      width:auto ;
+      background-color: #F7F7F7;
+      border-radius: 24px;
+      cursor: pointer;
+      font-weight: 500;
+      text-align: left;
+      text-overflow: ellipsis;
+
+    }
+    #active {
+      color: white;
+      background:#6C3FEA;
+      box-shadow: none !important;
+    }
+    .backtoHero{
+      cursor: pointer;
+      padding: 1%;
+      
+    }
+    .arrowRight,.backtoHero .arrow{
+      width:4vw;
+    }
+    .tagTitle{
+      display: flex;
+      justify-content: space-between;
+      width: 95% !important;
+    }
+    .tagContent{
+      padding-top: 5%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      width: 96%;
+    }
+    .tagInfo{
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 100%;
+    }
+    .tagHeader{
+      font-size: 6vw;
+      font-weight: 800;
+      text-align: center;
+    }
+    .contactCTA{
+      
+      font-weight: 600;
+      padding: 2% 4% ;
+      border: 0.1vw solid black;
+      width: 80%;
+      text-align: center;
+      border-radius: 24px;
+      font-size: 4vw;
+      transition: 300ms ease-in;
+    }
+    .contactCTA:hover{
+      color:white;
+      background-color: black;
+      cursor: pointer;
+      box-shadow: 8px 8px 24px rgba(0, 0, 0	
+      , 0.25) ;
+    }
+    
+    .tagPhoto{
+      
+      width: 96vw;
+      height: auto;
+    }
+    .top{
+      animation: slideDown 500ms ease-in-out;
+    }
+    .bottom{
+      margin-left: 0% !important;
+      
+    }
+    .backgroundLottie{
+      position: absolute;
+      z-index: 0;
+    }
+    .titleLink{
+      cursor: pointer;
+    }
+    .titleLink,.tagExplainer{
+      font-size: 4vw;
+    }
+    .tagExplainer{
+      padding: 5% 0%;
+      text-align: justify;
+  
+    }
    }

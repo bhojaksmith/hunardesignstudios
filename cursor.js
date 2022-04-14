@@ -15,10 +15,3 @@ jQuery(document).ready(function() {
     }, 10);
 
 });
-
-// $(document).ready(function(){
-//     $(".showSocial").click(function(){
-//       $(".social").slideToggle();
-//       $(".social").toggle();
-//     });
-//   });
