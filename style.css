@@ -367,7 +367,7 @@
        justify-content: flex-start;
        background: rgb(24,0,89);
        background: linear-gradient(56deg, rgba(24,0,89,1) 0%, rgba(14,139,177,1) 56%, rgba(102,179,134,1) 86%, rgba(255,186,25,1) 100%);  
-       background-image: url("/assets/mobile_background.jpg");
+       background-image: url("assets/mobile_background.jpg");
        background-position: 0% 50%;
        background-size: cover;
      }
