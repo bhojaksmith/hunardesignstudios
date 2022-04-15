@@ -69,3 +69,11 @@ function editing(){
         $(".editing").attr('id','active');
     });
 }
+var v=0;
+setInterval(function() {
+    if(v>=3){v=0}
+    v++
+    $(".c").removeAttr("id")
+    $(".c"+v).attr('id','current');
+}, 3000);
+

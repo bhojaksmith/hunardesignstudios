@@ -15,7 +15,14 @@
     }
     
  }
-
+@keyframes zoomImage {
+   0%{
+      transform: scale(1)
+    } 
+   100%{
+       transform: scale(1.08)
+    }
+}
  @keyframes arrowBounce{
     0%{padding-left:0%}
     50%{padding-left: 1.25%;}

@@ -228,7 +228,7 @@
     
   }
   .tagTitle{
-    width:80% !important;
+    width:81% !important;
     padding-top: 3%;
     align-items: center;
     justify-content: space-between;
@@ -284,15 +284,24 @@
     padding-top: 5%;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 81%;
   }
   .tagInfo{
     
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    
   }
   .tagHeader{
+    padding-top:5% ;
     font-size: 3vw;
     font-weight: 800;
+  }
+  .tagExplainer{
+    padding: 5% 0%;
+    text-align: justify;
+
   }
   .contactCTA{
     
@@ -320,13 +329,12 @@
     width: 100%;
     height: auto;
     transition: 300ms ease-in;
+    animation: zoomImage 500ms ease-in-out;
+
+    transform: scale(1.08);
   }
   .tagPhotoContainer:hover .tagPhoto{
-      
-    transform: scale(1.1);
-    /* transform: rotateX(8deg); */
-
-
+    transform: scale(1.09);
   }
   .top{
     animation: slideDown 500ms ease-in-out;
@@ -345,13 +353,32 @@
   .titleLink,.tagExplainer{
     font-size: .9vw;
   }
-  .tagExplainer{
-    padding: 5% 0%;
-    text-align: justify;
+  
+ .automatic{
+   display: flex;
+   background-color: #F7F7F7;
+   padding: 2%;
+   border-radius: 24px;
+   width: fit-content;
+   /* gap: 0.6vw; */
+ }
+ .automatic #current{
+  background-color: black;
+ }
+  .c1,.c2{
+    margin-right: 0.5vw;
+    height: .6vw;
+    width:.6vw;
+    border-radius: 100%;
+    background-color: #C6C6C6;
 
   }
- 
-  
+  .c3{
+    height: .6vw;
+    width:.6vw;
+    border-radius: 100%;
+    background-color: #C6C6C6;
+  }
    @media screen and (min-width: 1440px) {
      
    }
@@ -533,6 +560,7 @@
       align-items: center !important;
       justify-content: center !important;
       width: 100%;
+      padding-top: 2%;
     }
     .tagHeader{
       font-size: 6vw;
@@ -557,13 +585,25 @@
       box-shadow: 8px 8px 24px rgba(0, 0, 0	
       , 0.25) ;
     }
-    
-    .tagPhoto{
-      
+    .tagPhotoContainer{
+      border-radius: 4px;
       width: 96vw;
       height: auto;
+      overflow: hidden;
+      
     }
-   
+    .tagPhoto{
+      
+      width: 100%;
+      height: auto;
+      transition: 300ms ease-in;
+      animation: zoomImage 500ms ease-in-out;
+  
+      transform: scale(1.08);
+    }
+    .tagPhotoContainer:hover .tagPhoto{
+      transform: scale(1.09);
+    }
     .top{
       animation: slideDown 500ms ease-in-out;
     }
@@ -586,4 +626,31 @@
       text-align: justify;
   
     }
+     
+ .automatic{
+  display: flex;
+  background-color: #F7F7F7;
+  padding: 2%;
+  border-radius: 24px;
+  width: fit-content;
+  /* gap: 0.6vw; */
+}
+.automatic #current{
+
+ background-color: black;
+}
+ .c1,.c2{
+   margin-right: 02vw;
+   height: 2vw;
+   width:2vw;
+   border-radius: 100%;
+   background-color: #C6C6C6;
+
+ }
+ .c3{
+   height: 2vw;
+   width:2vw;
+   border-radius: 100%;
+   background-color: #C6C6C6;
+ }
    }
