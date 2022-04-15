@@ -21,11 +21,11 @@ function viewPortfolio(){
     
     console.log("Removing Hero")
     $(".heroSection").fadeOut(1000);
-    
     setTimeout(slidePortfolio, 1000);
 }
 function slidePortfolio(){
     $(".portfolio").fadeIn(1000);
+    autoCarousel();
 }
 function loadHero(){
     
