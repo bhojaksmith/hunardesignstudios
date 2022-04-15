@@ -311,11 +311,22 @@
     box-shadow: 8px 8px 24px rgba(0, 0, 0	
     , 0.25) ;
   }
-  
+  .tagPhotoContainer{
+    width: 35.9vw;
+    overflow: hidden;
+  }
   .tagPhoto{
     
-    width: 35.9vw;
+    width: 100%;
     height: auto;
+    transition: 300ms ease-in;
+  }
+  .tagPhotoContainer:hover .tagPhoto{
+      
+    transform: scale(1.1);
+    /* transform: rotateX(8deg); */
+
+
   }
   .top{
     animation: slideDown 500ms ease-in-out;
@@ -552,6 +563,7 @@
       width: 96vw;
       height: auto;
     }
+   
     .top{
       animation: slideDown 500ms ease-in-out;
     }
