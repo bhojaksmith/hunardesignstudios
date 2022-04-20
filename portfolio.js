@@ -95,12 +95,13 @@ function editing(){
     });
 }
 function autoCarousel(){
+    if(v==0){v++}
     setInterval(function() {
         if(v>=3){v=0}
         v++;
         $(".c").removeAttr("id")
         $(".c"+v).attr('id','current');
-    }, 3000);
+    }, 2000);
     
 }
 
