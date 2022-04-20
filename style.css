@@ -593,7 +593,7 @@
     }
     .tagPhotoContainer{
       border-radius: 4px;
-      width: 96vw;
+      width: 100vw;
       height: auto;
       overflow: hidden;
       
@@ -614,8 +614,9 @@
       animation: slideDown 500ms ease-in-out;
     }
     .bottom{
+      margin-top: 2%;
       margin-left: 0% !important;
-      
+      width: 96.2vw;
     }
     .backgroundLottie{
       position: absolute;
@@ -630,7 +631,11 @@
     .tagExplainer{
       padding: 5% 0%;
       text-align: justify;
+      font-size: 5vw !important;
   
+    }
+    .titleLink{
+      font-size: 4vw !important;
     }
      
  .automatic{
