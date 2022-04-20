@@ -20,11 +20,15 @@
     .cursor{
       z-index: 1;
       position: absolute;
-      border:  1px solid rgba(255,255,255);
-      
       width: 2vw; 
       height: 2vw; 
       border-radius: 100%;  
+  }
+  .white{
+    border:  1px solid rgba(255,255,255);
+  }
+  .black{
+    border:  1px solid rgba(0,0,0);
   }
    .heroSection {
      cursor: none;
@@ -215,7 +219,7 @@
    }
    .arrowRight{
     margin-left: 0.5vw;
-    width: 1vw;
+    width: 1.5vw;
     transform: rotate(180deg);
    }
    .tagContainer{
@@ -235,7 +239,7 @@
     width: inherit;
   }
   .titleHeader{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
   .ViewHeader{
     font-size: 2vw;
@@ -244,6 +248,9 @@
     align-items: center;
     justify-content: flex-start;
     margin-left: 5%;
+  }
+  .titleLink{
+    font-size:1.5vw !important ;
   }
   .portfolio{
     overflow: hidden;
@@ -281,7 +288,7 @@
     justify-content: space-between;
   }
   .tagContent{
-    padding-top: 5%;
+    padding-top: 3.5%;
     display: flex;
     justify-content: space-between;
     width: 81%;
@@ -295,13 +302,14 @@
   }
   .tagHeader{
     padding-top:5% ;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 800;
   }
   .tagExplainer{
     padding: 5% 0%;
     text-align: justify;
-
+    font-size: 1.35vw !important;
+    color: rgba(0,0,0,0.6) !important;
   }
   .contactCTA{
     
@@ -310,7 +318,7 @@
     border: 0.1vw solid black;
     width: fit-content;
     border-radius: 24px;
-    font-size: .9vw;
+    font-size: 1.15vw;
     transition: 300ms ease-in;
   }
   .contactCTA:hover{
@@ -321,7 +329,7 @@
     , 0.25) ;
   }
   .tagPhotoContainer{
-    width: 35.9vw;
+    width: 50vw;
     overflow: hidden;
   }
   .tagPhoto{
@@ -341,6 +349,8 @@
   }
   .bottom{
     margin-left: 10%;
+    border: none;
+    
     
   }
   .backgroundLottie{

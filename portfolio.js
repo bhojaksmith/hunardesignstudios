@@ -1,8 +1,8 @@
 var v=0;
 function uxDesign(){
     $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/ux1.jpg').fadeIn();
-        $(".titleHeader").text('UI/UX Design').fadeIn();
+        $(".bottom").attr('src','uxDesign.html').fadeIn();
+       
         $('.tag').removeAttr('id');
         $(".c").removeAttr("id");
         $(".c1").attr('id','current');
@@ -16,8 +16,8 @@ function uxDesign(){
 
 function illustrations(){
     $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/mag1.jpg').fadeIn();
-        $(".titleHeader").text('Illustrations').fadeIn();
+        $(".bottom").attr('src','illustrations.html').fadeIn();
+        
         $('.tag').removeAttr('id');
         $(".c").removeAttr("id");
         $(".c1").attr('id','current');
@@ -30,8 +30,7 @@ function illustrations(){
 
 function magazine(){
     $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/mag3.jpg').fadeIn();
-        $(".titleHeader").text('Magazine & Brochure').fadeIn();
+        $(".bottom").attr('src','magazine.html').fadeIn();
         $('.tag').removeAttr('id');
         $(".c").removeAttr("id");
         $(".c1").attr('id','current');
@@ -44,8 +43,7 @@ function magazine(){
 
 function pitch(){
     $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/ux3.jpg').fadeIn();
-        $(".titleHeader").text('Pitch Deck').fadeIn();
+        $(".bottom").attr('src','pitch.html').fadeIn();
         $('.tag').removeAttr('id');
         $(".c").removeAttr("id");
         $(".c1").attr('id','current');
@@ -56,38 +54,37 @@ function pitch(){
     });
 }
 
-function branding(){
-    $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/ux2.jpg').fadeIn();
-        $(".titleHeader").text('Branding & Packaging').fadeIn();
-        $('.tag').removeAttr('id');
-        $(".c").removeAttr("id");
-        $(".c1").attr('id','current');
-        v=0;
-        $(".branding").attr('id','active');
-        $(this).fadeIn();
+// function branding(){
+//     $(".bottom").fadeOut(function() {
+//         $(".tagPhoto").attr('src','assets/portfolio/ux2.jpg').fadeIn();
+//         $(".titleHeader").text('Branding & Packaging').fadeIn();
+//         $('.tag').removeAttr('id');
+//         $(".c").removeAttr("id");
+//         $(".c1").attr('id','current');
+//         v=0;
+//         $(".branding").attr('id','active');
+//         $(this).fadeIn();
        
-    });
-}
+//     });
+// }
 
 
-function motion(){
-    $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/mag2.jpg').fadeIn();
-        $(".titleHeader").text('Motion Graphics').fadeIn();
-        $('.tag').removeAttr('id');
-        $(".c").removeAttr("id");
-        $(".c1").attr('id','current');
-        v=0;
-        $(".motion").attr('id','active');
-        $(this).fadeIn();
-    });
-}
+// function motion(){
+//     $(".bottom").fadeOut(function() {
+//         $(".tagPhoto").attr('src','assets/portfolio/mag2.jpg').fadeIn();
+//         $(".titleHeader").text('Motion Graphics').fadeIn();
+//         $('.tag').removeAttr('id');
+//         $(".c").removeAttr("id");
+//         $(".c1").attr('id','current');
+//         v=0;
+//         $(".motion").attr('id','active');
+//         $(this).fadeIn();
+//     });
+// }
 
 function editing(){
     $(".bottom").fadeOut(function() {
-        $(".tagPhoto").attr('src','assets/portfolio/mag1.jpg').fadeIn();
-        $(".titleHeader").text('Photo Editing').fadeIn();
+        $(".bottom").attr('src','editing.html').fadeIn();
         $('.tag').removeAttr('id');
         $(".c").removeAttr("id");
         $(".c1").attr('id','current');

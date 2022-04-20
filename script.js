@@ -25,7 +25,7 @@ function viewPortfolio(){
 }
 function slidePortfolio(){
     $(".portfolio").fadeIn(1000);
-    autoCarousel();
+    
 }
 function loadHero(){
     
