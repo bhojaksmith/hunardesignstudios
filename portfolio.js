@@ -16,10 +16,21 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 $(".uxDesign").attr('id','active');
                 let Moveleft  = document.querySelector('.uxDesign');
                 Moveleft.scrollLeft += 20;
-                document.querySelector('#item1').src = "assets/m_ux/1.png";
-                document.querySelector('#item2').src = "assets/m_ux/2.png";
-                document.querySelector('#item3').src = "assets/m_ux/3.png";
-                $(this).fadeIn();
+
+                i1 = document.querySelector('#item1')
+                i2 = document.querySelector('#item2')
+                i3 = document.querySelector('#item3')
+                
+                i1.src = "assets/m_ux/1.png";
+                i2.src = "assets/m_ux/2.png";
+                i3.src = "assets/m_ux/3.png";
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
+                  
+                    
+                
+               
                
                 
             });
@@ -35,7 +46,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/m_illustrations/1.png";
                 document.querySelector('#item2').src = "assets/m_illustrations/2.png";
                 document.querySelector('#item3').src = "assets/m_illustrations/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }
@@ -53,7 +66,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/m_magazine/1.png";
                 document.querySelector('#item2').src = "assets/m_magazine/2.png";
                 document.querySelector('#item3').src = "assets/m_magazine/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                 
             });
         }
@@ -71,7 +86,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item2').src = "assets/m_pitch/2.png";
                 document.querySelector('#item3').src = "assets/m_pitch/3.png";
                 $(".pitch").attr('id','active');
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                 
             });
         }
@@ -89,7 +106,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/m_editing/1.png";
                 document.querySelector('#item2').src = "assets/m_editing/2.png";
                 document.querySelector('#item3').src = "assets/m_editing/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }
@@ -107,7 +126,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/m_branding/1.png";
                 document.querySelector('#item2').src = "assets/m_branding/2.png";
                 document.querySelector('#item3').src = "assets/m_branding/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }
@@ -125,7 +146,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/ux/1.png";
                 document.querySelector('#item2').src = "assets/ux/2.png";
                 document.querySelector('#item3').src = "assets/ux/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
                 
             });
@@ -139,7 +162,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/illustrations/1.png";
                 document.querySelector('#item2').src = "assets/illustrations/2.png";
                 document.querySelector('#item3').src = "assets/illustrations/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }
@@ -155,7 +180,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/magazine/1.png";
                 document.querySelector('#item2').src = "assets/magazine/2.png";
                 document.querySelector('#item3').src = "assets/magazine/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                 
             });
         }
@@ -172,7 +199,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item2').src = "assets/pitch/2.png";
                 document.querySelector('#item3').src = "assets/pitch/3.png";
                 $(".pitch").attr('id','active');
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                 
             });
         }
@@ -189,7 +218,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/editing/1.png";
                 document.querySelector('#item2').src = "assets/editing/2.png";
                 document.querySelector('#item3').src = "assets/editing/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }
@@ -205,7 +236,9 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 document.querySelector('#item1').src = "assets/branding/1.png";
                 document.querySelector('#item2').src = "assets/branding/2.png";
                 document.querySelector('#item3').src = "assets/branding/3.png";
-                $(this).fadeIn();
+                $('#item').imagesLoaded( function() {
+                    $('.slider').fadeIn();
+                  });
                
             });
         }

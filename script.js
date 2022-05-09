@@ -5,7 +5,7 @@ Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => 
     console.log('images finished loading');
 });
 function run(){
-    $('.content').imagesLoaded( function() {
+    $('.content').imagesLoaded({ background: true }, function() {
         setTimeout(removeLoader, 2000);
       });
  }
