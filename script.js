@@ -19,7 +19,7 @@ function run(){
     content.style.display = 'block';
     
     }
-
+    
 // function viewPortfolio(){
     
 //     console.log("Removing Hero")
