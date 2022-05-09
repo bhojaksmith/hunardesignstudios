@@ -14,6 +14,8 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 // $(".c1").attr('id','current');
                 // v=0;
                 $(".uxDesign").attr('id','active');
+                let Moveleft  = document.querySelector('.uxDesign');
+                Moveleft.scrollLeft += 20;
                 document.querySelector('#item1').src = "assets/m_ux/1.png";
                 document.querySelector('#item2').src = "assets/m_ux/2.png";
                 document.querySelector('#item3').src = "assets/m_ux/3.png";
@@ -28,6 +30,8 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                
                 $('.tag').removeAttr('id');
                 $(".illustrations").attr('id','active');
+                let Moveleft  = document.querySelector('.illustrations');
+                Moveleft.scrollLeft += 20;
                 document.querySelector('#item1').src = "assets/m_illustrations/1.png";
                 document.querySelector('#item2').src = "assets/m_illustrations/2.png";
                 document.querySelector('#item3').src = "assets/m_illustrations/3.png";
@@ -44,6 +48,8 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 // $(".c1").attr('id','current');
                 // v=0;
                 $(".magazine").attr('id','active');
+                let Moveleft  = document.querySelector('.magazine');
+                Moveleft.scrollLeft += 20;
                 document.querySelector('#item1').src = "assets/m_magazine/1.png";
                 document.querySelector('#item2').src = "assets/m_magazine/2.png";
                 document.querySelector('#item3').src = "assets/m_magazine/3.png";
@@ -60,6 +66,7 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 // $(".c1").attr('id','current');
                 // v=0;
                 $(".pitch").attr('id','active');
+                $(".pitch").attr('scroll-snap-align', 'start')
                 document.querySelector('#item1').src = "assets/m_pitch/1.png";
                 document.querySelector('#item2').src = "assets/m_pitch/2.png";
                 document.querySelector('#item3').src = "assets/m_pitch/3.png";
@@ -78,6 +85,7 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 // $(".c1").attr('id','current');
                 // v=0;
                 $(".editing").attr('id','active');
+                $(".editing").attr('scroll-snap-align', 'start')
                 document.querySelector('#item1').src = "assets/m_editing/1.png";
                 document.querySelector('#item2').src = "assets/m_editing/2.png";
                 document.querySelector('#item3').src = "assets/m_editing/3.png";
@@ -94,6 +102,8 @@ const mediaQuery = window.matchMedia('(min-width: 768px)')
                 // $(".c1").attr('id','current');
                 // v=0;
                 $(".branding").attr('id','active');
+
+                $(".branding").attr('scroll-snap-align', 'start')
                 document.querySelector('#item1').src = "assets/m_branding/1.png";
                 document.querySelector('#item2').src = "assets/m_branding/2.png";
                 document.querySelector('#item3').src = "assets/m_branding/3.png";
