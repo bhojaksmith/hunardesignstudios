@@ -161,6 +161,7 @@
    }
    
    .logo-header {
+     z-index: 2;
     animation: slideDown 500ms ease-in-out;
      padding: 1% 0%;
      display: flex;
@@ -538,7 +539,7 @@
      .logo-header {
        padding: 3% 0%;
        flex-direction: column;
-
+       z-index: 2;
      }
      .logo {
        width: 32vw;
