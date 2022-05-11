@@ -59,7 +59,7 @@
       
       height: auto;
     }
-    .card .image img {
+    .card .purpleSkeleton img {
       max-width: 100%;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -68,7 +68,7 @@
       padding: 20px 30px;
     }
     
-    .card.is-loading .image,
+    .card.is-loading .purpleSkeleton,
     .card.is-loading h2,
     .card.is-loading p {
       background: #eee;
@@ -78,7 +78,7 @@
       -webkit-animation: 1.5s shine linear infinite;
               animation: 1.5s shine linear infinite;
     }
-    .card.is-loading .image {
+    .card.is-loading .purpleSkeleton {
       height: 200px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;

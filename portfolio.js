@@ -2,297 +2,221 @@
 const mediaQuery = window.matchMedia('(min-width: 768px)')
 
     if(!mediaQuery.matches){
-                document.querySelector('#item1').src = "assets/m_ux/1.png";
-                document.querySelector('#item2').src = "assets/m_ux/2.png";
-                document.querySelector('#item3').src = "assets/m_ux/3.png";
+                document.querySelector('#item1').src = "assets/m_uxDesign/1.png";
+                document.querySelector('#item2').src = "assets/m_uxDesign/2.png";
+                document.querySelector('#item3').src = "assets/m_uxDesign/3.png";
                 $('#item').imagesLoaded( function() {
                     $('.card').hide();
-                    $('.slider').show();
+                    $('.carousel-inner').fadeIn();
                   });
         
                   console.log(mediaQuery.matches)
 
         function uxDesign(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".uxDesign").attr('id','active');
-                let Moveleft  = document.querySelector('.uxDesign');
-                Moveleft.scrollLeft += 20;
+            $(".uxDesign").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_uxDesign/1.png";
+            document.querySelector('#item2').src = "assets/m_uxDesign/2.png";
+            document.querySelector('#item3').src = "assets/m_uxDesign/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
 
-                i1 = document.querySelector('#item1')
-                i2 = document.querySelector('#item2')
-                i3 = document.querySelector('#item3')
-                
-                i1.src = "assets/m_ux/1.png";
-                i2.src = "assets/m_ux/2.png";
-                i3.src = "assets/m_ux/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-                  
-                    
-                
-               
-               
-                
-            });
         }
         
         function illustrations(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
-               
-                $('.tag').removeAttr('id');
-                $(".illustrations").attr('id','active');
-                let Moveleft  = document.querySelector('.illustrations');
-                Moveleft.scrollLeft += 20;
-                document.querySelector('#item1').src = "assets/m_illustrations/1.png";
-                document.querySelector('#item2').src = "assets/m_illustrations/2.png";
-                document.querySelector('#item3').src = "assets/m_illustrations/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-            });
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
+                
+            $(".illustrations").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_illustrations/1.png";
+            document.querySelector('#item2').src = "assets/m_illustrations/2.png";
+            document.querySelector('#item3').src = "assets/m_illustrations/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
+
         }
         
         function magazine(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".magazine").attr('id','active');
-                let Moveleft  = document.querySelector('.magazine');
-                Moveleft.scrollLeft += 20;
-                document.querySelector('#item1').src = "assets/m_magazine/1.png";
-                document.querySelector('#item2').src = "assets/m_magazine/2.png";
-                document.querySelector('#item3').src = "assets/m_magazine/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-                
-            });
+            $(".magazine").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_magazine/1.png";
+            document.querySelector('#item2').src = "assets/m_magazine/2.png";
+            document.querySelector('#item3').src = "assets/m_magazine/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
+
         }
         
         function pitch(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
-              
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".pitch").attr('id','active');
-                $(".pitch").attr('scroll-snap-align', 'start')
-                document.querySelector('#item1').src = "assets/m_pitch/1.png";
-                document.querySelector('#item2').src = "assets/m_pitch/2.png";
-                document.querySelector('#item3').src = "assets/m_pitch/3.png";
-                $(".pitch").attr('id','active');
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-            });
+            $(".pitch").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_pitch/1.png";
+            document.querySelector('#item2').src = "assets/m_pitch/2.png";
+            document.querySelector('#item3').src = "assets/m_pitch/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
+
         }
         
         function editing(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
-              
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".editing").attr('id','active');
-                $(".editing").attr('scroll-snap-align', 'start')
-                document.querySelector('#item1').src = "assets/m_editing/1.png";
-                document.querySelector('#item2').src = "assets/m_editing/2.png";
-                document.querySelector('#item3').src = "assets/m_editing/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-            });
+            $(".editing").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_editing/1.png";
+            document.querySelector('#item2').src = "assets/m_editing/2.png";
+            document.querySelector('#item3').src = "assets/m_editing/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
+
         }
         
         function branding(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
-               
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".branding").attr('id','active');
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
+                
+            $(".branding").attr('id','active');
+            document.querySelector('#item1').src = "assets/m_branding/1.png";
+            document.querySelector('#item2').src = "assets/m_branding/2.png";
+            document.querySelector('#item3').src = "assets/m_branding/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
 
-                $(".branding").attr('scroll-snap-align', 'start')
-                document.querySelector('#item1').src = "assets/m_branding/1.png";
-                document.querySelector('#item2').src = "assets/m_branding/2.png";
-                document.querySelector('#item3').src = "assets/m_branding/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-            });
         }
 
     }
     else{
         $('#item').imagesLoaded( function() {
             $('.card').hide();
+            $('.carousel-inner').fadeIn();
+            
         });
         function uxDesign(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".uxDesign").attr('id','active');
-                document.querySelector('#item1').src = "assets/ux/1.png";
-                document.querySelector('#item2').src = "assets/ux/2.png";
-                document.querySelector('#item3').src = "assets/ux/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".uxDesign").attr('id','active');
+            document.querySelector('#item1').src = "assets/uxDesign/1.png";
+            document.querySelector('#item2').src = "assets/uxDesign/2.png";
+            document.querySelector('#item3').src = "assets/uxDesign/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
 
         }
         
         function illustrations(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+            $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".illustrations").attr('id','active');
-                document.querySelector('#item1').src = "assets/illustrations/1.png";
-                document.querySelector('#item2').src = "assets/illustrations/2.png";
-                document.querySelector('#item3').src = "assets/illustrations/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".illustrations").attr('id','active');
+            document.querySelector('#item1').src = "assets/illustrations/1.png";
+            document.querySelector('#item2').src = "assets/illustrations/2.png";
+            document.querySelector('#item3').src = "assets/illustrations/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
         }
         
         function magazine(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+           $(".carousel-inner").hide();
+           $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".magazine").attr('id','active');
-                document.querySelector('#item1').src = "assets/magazine/1.png";
-                document.querySelector('#item2').src = "assets/magazine/2.png";
-                document.querySelector('#item3').src = "assets/magazine/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".magazine").attr('id','active');
+            document.querySelector('#item1').src = "assets/magazine/1.png";
+            document.querySelector('#item2').src = "assets/magazine/2.png";
+            document.querySelector('#item3').src = "assets/magazine/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
         }
         
         function pitch(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+         $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".pitch").attr('id','active');
-                document.querySelector('#item1').src = "assets/pitch/1.png";
-                document.querySelector('#item2').src = "assets/pitch/2.png";
-                document.querySelector('#item3').src = "assets/pitch/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".pitch").attr('id','active');
+            document.querySelector('#item1').src = "assets/pitch/1.png";
+            document.querySelector('#item2').src = "assets/pitch/2.png";
+            document.querySelector('#item3').src = "assets/pitch/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
         }
         
         function editing(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+           $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".editing").attr('id','active');
-                document.querySelector('#item1').src = "assets/editing/1.png";
-                document.querySelector('#item2').src = "assets/editing/2.png";
-                document.querySelector('#item3').src = "assets/editing/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".editing").attr('id','active');
+            document.querySelector('#item1').src = "assets/editing/1.png";
+            document.querySelector('#item2').src = "assets/editing/2.png";
+            document.querySelector('#item3').src = "assets/editing/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
         }
         
         function branding(){
-            $(".slider").hide();
-            $('.card').show();
-            $(".slider").fadeOut(function() {
+            
+           $(".carousel-inner").hide();
+            $('.card').fadeIn();
+            
+            $('.tag').removeAttr('id');
                 
-                $('.tag').removeAttr('id');
-                // $(".c").removeAttr("id");
-                // $(".c1").attr('id','current');
-                // v=0;
-                $(".branding").attr('id','active');
-                document.querySelector('#item1').src = "assets/branding/1.png";
-                document.querySelector('#item2').src = "assets/branding/2.png";
-                document.querySelector('#item3').src = "assets/branding/3.png";
-                $('#item').imagesLoaded( function() {
-                    $('.card').hide();
-                    $('.slider').show();
-                  });
-               
-                
-            });
+            $(".branding").attr('id','active');
+            document.querySelector('#item1').src = "assets/branding/1.png";
+            document.querySelector('#item2').src = "assets/branding/2.png";
+            document.querySelector('#item3').src = "assets/branding/3.png";
+            $('#item').imagesLoaded( function() {
+                $('.card').hide();
+                $('.carousel-inner').fadeIn();
+                });
         }
     }
 
