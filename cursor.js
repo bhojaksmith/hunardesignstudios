@@ -1,17 +1,17 @@
-jQuery(document).ready(function() {
+// jQuery(document).ready(function() {
 
-    var mouseX = 0, mouseY = 0;
-    var xp = 0, yp = 0;
+//     var mouseX = 0, mouseY = 0;
+//     var xp = 0, yp = 0;
     
-    $(document).mousemove(function(e){
-    mouseX = e.pageX ;
-    mouseY = e.pageY ; 
-    });
+//     $(document).mousemove(function(e){
+//     mouseX = e.pageX ;
+//     mouseY = e.pageY ; 
+//     });
     
-    setInterval(function(){
-    xp += ((mouseX - xp)/10);
-    yp += ((mouseY - yp)/10);
-    $(".cursor").css({left: xp +'px', top: yp +'px'});
-    }, 10);
+//     setInterval(function(){
+//     xp += ((mouseX - xp)/10);
+//     yp += ((mouseY - yp)/10);
+//     $(".cursor").css({left: xp +'px', top: yp +'px'});
+//     }, 10);
 
-});
+// });
