@@ -10,17 +10,41 @@
       overflow-x: clip !important;
       margin:0;
       background-color: rgb(24,0,89);
-      background-color: linear-gradient(56deg, rgba(24,0,89,1) 0%, rgba(14,139,177,1) 56%, rgba(102,179,134,1) 86%, rgba(255,186,25,1) 100%);
-      background-image: url("assets/mobileBackgroundGradient.svg");
       background-repeat: no-repeat;
       background-size: 101%;
     }
     .content{
       width: 100%;
       height: 100%;
+      background-color: rgb(24,0,89);
+      background-color: linear-gradient(56deg, rgba(24,0,89,1) 0%, rgba(14,139,177,1) 56%, rgba(102,179,134,1) 86%, rgba(255,186,25,1) 100%);
+      background-image: url("assets/mobileBackgroundGradient.svg");
+      background-repeat: no-repeat;
+      background-size: 101%;
       
-      box-sizing: content-box;
 
+    }
+    .cardTitleContainer{
+      display: flex;
+      justify-content: space-between;
+      width: 73.5%;
+      align-items: center;
+    }
+    .cardTitle{
+      font-size: 2vw;
+      font-weight: 400;
+      padding-bottom: 2%;
+      color: white;
+    }
+    .viewAll{
+      color: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 8%;
+    }
+    .arrow{
+      width: 1vw;
     }
     ::selection {
       background: #6C3FEA; /* WebKit/Blink Browsers */
@@ -232,7 +256,7 @@
      margin-left: 0%;
      padding-right: 10%;
      margin-left: 20%;
-     padding-top:8% ;
+     padding-top:5.5% ;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
      -webkit-flex-direction: column;
@@ -293,11 +317,7 @@
    .CTAtext{
     font-size: 1vw;
    }
-   .arrow{
-    animation: arrowBounce 1.5s infinite ease-in-out;
-    margin-left: 1vw;
-    width: 1vw;
-   }
+   
    .arrowRight{
     margin-left: 0.5vw;
     width: 1.5vw;
@@ -335,7 +355,7 @@
   }
   .portfolio{
     overflow: visible;    
-    margin:2% 20% ;
+    margin:1% 20% ;
     width: 80%;
   }
   .tag{
@@ -530,6 +550,27 @@
    }
    
    @media screen and (max-width: 479px) {
+    .cardTitleContainer{
+      display: flex;
+      justify-content: space-between;
+      width: 113%;
+      align-items: center;
+    }
+    .cardTitle{
+      font-size: 6vw;
+      font-weight: 400;
+      padding-bottom: 2%;
+    }
+    .viewAll{
+      color: rgba(255,255,255,0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 20%;
+    }
+    .arrow{
+      width: 4vw;
+    }
     .cards{
 
       display: grid;
@@ -649,13 +690,7 @@
       font-size: 4vw;
       color: rgba(255,255,255,0.6);
      }
-     .arrow{
-      color: #fff;
-      animation: arrowBounce 1.5s infinite ease-in-out;
-      cursor: pointer;
-      margin-left: 2vw;
-      width: 4vw;
-     }
+   
 
      /* Portfolio Section CSS */
      
